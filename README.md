@@ -1,23 +1,26 @@
+---
+
+### 2. Updated README for **prompt-shield-tester**
+
+```markdown
 # Prompt Shield Tester
 
-A lightweight security testing tool designed to catch prompt injection and jailbreak attempts before they reach your AI models.
+A lightweight adversarial security tool designed to detect and stress-test prompt injection and jailbreak attempts.
 
-## What It Solves
-Standard text filters use brittle, static keyword lists that break easily when attacks change slightly. This tool models an organic immune system to test how well your defense layers handle evolving, mutated threats.
+## What It Does
+
+Simulates an organic immune system to defend against evolving prompt injection attacks:
+- Detects known adversarial patterns (antibodies)
+- Generates mutated variants of attacks
+- Returns confidence scores and threat levels
+- Helps evaluate the resilience of LLM guardrails
 
 ## Core Features
-* **Bio-Immune Shield (`src/immune_shield.py`):** Scans inputs against known threat antibodies and neutralizes malicious patterns.
-* **Mutation Engine:** Automatically generates semantic variations (viral variants) of injection payloads to test your shield's resilience.
-* **Automated CI/CD:** Runs tests on every push via GitHub Actions to ensure security rules never regress.
+
+- **BioImmuneShield** – Pattern-based detection with confidence scoring
+- **Mutation Engine** – Generates semantic variations of attack payloads
+- Structured security reporting
+- Pytest-based validation suite
+- CI/CD ready
 
 ## Project Structure
-* `src/`: Core shield logic and bio-immune mutation engine.
-* `payloads/`: Sample attack payloads for security testing.
-* `tests/`: Automated test suite for continuous validation.
-* `.github/workflows/`: CI pipeline configuration.
-
-## Quick Start
-1. Clone the repository and install dependencies.
-2. Run the test suite locally:
-   ```bash
-   python -m pytest -v
