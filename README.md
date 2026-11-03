@@ -1,22 +1,29 @@
-
 # Prompt Shield Tester
 
-A lightweight adversarial security tool designed to detect and stress-test prompt injection and jailbreak attempts.
+**Purpose:** Adversarial Security & Threat Guardrails, prompt injection mutations, and bio-immune defense validation.
 
-## What It Does
+---
 
-Simulates an organic immune system to defend against evolving prompt injection attacks:
-- Detects known adversarial patterns (antibodies)
-- Generates mutated variants of attacks
-- Returns confidence scores and threat levels
-- Helps evaluate the resilience of LLM guardrails
+## Ecosystem Architecture
+* **[prompt-shield-tester](https://github.com/yurtseveronder-design/prompt-shield-tester)** *(Current)*: Focuses strictly on adversarial security, threat mitigation, and guardrails.
+* **[rag-perf-bench](https://github.com/yurtseveronder-design/rag-perf-bench)**: Focuses exclusively on RAG quality, latency, throughput, and DeepEval telemetry.
 
-## Core Features
+---
 
-- **BioImmuneShield** – Pattern-based detection with confidence scoring
-- **Mutation Engine** – Generates semantic variations of attack payloads
-- Structured security reporting
-- Pytest-based validation suite
-- CI/CD ready
+## Example Output (`security_report.md`)
 
-## Project Structure
+```markdown
+# LLM Security Audit & Threat Guardrail Report
+
+| Metric | Value |
+| :--- | :--- |
+| **Total Test Vectors** | 45 |
+| **Successfully Blocked** | 43 |
+| **Bypassed / Passed** | 2 |
+| **Shield Mitigation Rate** | 95.56% |
+
+### Adversarial Evaluation Log
+| Mutation Vector / Payload | Threat Confidence | Matched Antibody / Guardrail | Final Status |
+| :--- | :--- | :--- | :--- |
+| `base64_system_override` | `0.98` | `ImmuneShield_Base64Decoder` | **🛡️ BLOCKED** |
+| `zero_width_injection` | `0.91` | `ImmuneShield_Sanitizer` | **🛡️ BLOCKED** |
