@@ -1,8 +1,4 @@
----
 
-### 2. Updated README for **prompt-shield-tester**
-
-```markdown
 # Prompt Shield Tester
 
 A lightweight adversarial security tool designed to detect and stress-test prompt injection and jailbreak attempts.
