@@ -1,3 +1,5 @@
+> ⚠️ **DEPRECATED**: This project has been migrated and unified into the single-source-of-truth **[ai-sentinel](https://github.com/yurtseveronder-design/ai-sentinel)** repository. Please visit there for active code and updates.
+
 # Prompt Shield Tester
 
 **Purpose:** Adversarial Security & Threat Guardrails, prompt injection mutations, and bio-immune defense validation.
